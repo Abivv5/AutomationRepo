@@ -9,14 +9,17 @@ public class Base {
 	public WebDriver driver; //to initialize gloabally 
 
 	public void initializeBrowser() {
-		//driver = new ChromeDriver(); //no need to write Webdriver driver = new ChromeDriver(); 
+		driver = new ChromeDriver(); //no need to write Webdriver driver = new ChromeDriver(); 
 		//driver = new FirefoxDriver();
-		driver = new EdgeDriver();
-		driver.get(" https://selenium.qabible.in/"); //url up,to launch the web application, get is a method 
+		//driver = new EdgeDriver();
+		driver.get("https://www.amazon.in/"); //url up,to launch the web application, get is a method 
 		driver.manage().window().maximize(); //to maximize the screen code	
 		
 	}
-
+public void closeandQuit() {
+	//driver.close - it helps to close a single web page
+	driver.quit(); //In quit this command helps to close all the related web page.
+}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Base base = new Base();
