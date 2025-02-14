@@ -12,7 +12,7 @@ public class Base {
 		driver = new ChromeDriver(); //no need to write Webdriver driver = new ChromeDriver(); 
 		//driver = new FirefoxDriver();
 		//driver = new EdgeDriver();
-		driver.get("https://www.amazon.in/"); //url up,to launch the web application, get is a method 
+		driver.get(" https://selenium.qabible.in/"); //url up,to launch the web application, get is a method 
 		driver.manage().window().maximize(); //to maximize the screen code	
 		
 	}
