@@ -10,7 +10,7 @@ public class BrowserCommands extends Base {
 		System.out.println(title); //this method is used to get the title of the web application.
 		String handleid =driver.getWindowHandle();
 		System.out.println(handleid); //this method is used to get the window handle id.
-		String pagesourse= driver.getPageSource();
+		String pagesourse= driver.getPageSource();//to get the full code.
 		System.out.println(pagesourse);
 	}
 	public void navigationCommands() {
