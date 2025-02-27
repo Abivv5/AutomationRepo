@@ -6,10 +6,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
-	public WebDriver driver; //to initialize gloabally 
+	public WebDriver driver; //to initialize gloabally, used to automating web browsers. 
 
 	public void initializeBrowser() {
-		driver = new ChromeDriver(); //no need to write Webdriver driver = new ChromeDriver(); 
+		driver = new ChromeDriver(); //no need to write Webdriver driver = new ChromeDriver();//initialize the driver
 		//driver = new FirefoxDriver();
 		//driver = new EdgeDriver();
 		driver.get(" https://selenium.qabible.in/"); //url up,to launch the web application, get is a method 

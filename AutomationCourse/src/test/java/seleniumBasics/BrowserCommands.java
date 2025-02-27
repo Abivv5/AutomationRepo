@@ -25,7 +25,6 @@ public class BrowserCommands extends Base {
 		BrowserCommands browsercommands = new BrowserCommands();
 		browsercommands.initializeBrowser();
 		browsercommands.navigationCommands();
-		
 		browsercommands.browserCommands();
 		//browsercommands.closeandQuit();
 		
