@@ -24,6 +24,7 @@ public void closeandQuit() {
 		// TODO Auto-generated method stub
 		Base base = new Base();
 		base.initializeBrowser();
+		//base.closeandQuit();
 	}
 
 }

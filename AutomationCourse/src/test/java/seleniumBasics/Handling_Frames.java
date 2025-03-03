@@ -15,6 +15,8 @@ public class Handling_Frames extends Base{
 		driver.switchTo().frame(pageOne);
 		WebElement sampleElement =driver.findElement(By.id("sampleHeading"));
 		System.out.println(sampleElement.getText());
+		driver.switchTo().defaultContent();//driver come to the previous page
+		System.out.println(driver.getTitle());
 		
 		
 	}
