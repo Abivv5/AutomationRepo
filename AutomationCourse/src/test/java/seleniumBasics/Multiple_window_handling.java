@@ -23,7 +23,7 @@ public class Multiple_window_handling extends Base {
 	 			{ 
 	 				driver.switchTo().window(current_id); 
 	 				WebElement email_fld=driver.findElement(By.xpath("//input[@name='emailid']")); 
-	 				email_fld.sendKeys("aishu123@gmail.com"); 
+	 				email_fld.sendKeys("abivv55gmail.com"); 
 	 				WebElement submit_fld=driver.findElement(By.xpath("//input[@name='btnLogin']")); 
 	 				submit_fld.click(); 
 	 				driver.switchTo().defaultContent(); 
