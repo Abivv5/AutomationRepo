@@ -1,7 +1,11 @@
 package seleniumBasics;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WebElement_Commands extends Base {
 	public void webElements() {
@@ -11,6 +15,8 @@ public class WebElement_Commands extends Base {
 		/*WebElement message = driver.findElement(By.xpath("//input[@id='value-a']"));
 		message.sendKeys("10");*/
 		WebElement showMessage = driver.findElement(By.xpath("//button[@id='button-one']"));
+		 WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10)); //explicit wait
+		 	wait.until(ExpectedConditions.elementToBeClickable(showMessage));
 		showMessage.click();//this method is used for click that button.
 		System.out.println(showMessage.isEnabled());
 		System.out.println(showMessage.isDisplayed());//to check the button is displayed or not 
